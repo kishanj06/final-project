@@ -1,0 +1,142 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite;
+    color:steelblue;
+}
+
+h1{
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.book-list,
+.movie-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-card,
+.movie-card {
+    background-color: rgba(245, 222, 193, 0.898);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+}
+
+.book-card img,
+.movie-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.book-card h2,
+.movie-card h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.book-card p,
+.movie-card p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+a {
+    color:black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color:antiquewhite;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a:hover {
+    color:steelblue
+}
+
+.review-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review {
+    background-color: antiquewhite;
+    border-left: 5px solid;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow:0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin-top:0;
+    color:black
+}
+
+.review p{
+    font-size: 16px;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.review-card {
+    width: 250px;
+    background-color: rgba(245, 222, 193, 0.898);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    text-align: left;
+}
+
+.review-card h2 {
+    margin-top: 0;
+    color: black;
+}
+
+.review-card p {
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .book-list,
+    .movie-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-card,
+    .movie-card{
+        width: 80%;
+    }
+}
+
+.favorite {
+    border: 3px solid steelblue;
+    transform: scale(1.05);
+  }
+  
